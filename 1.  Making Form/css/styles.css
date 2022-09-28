@@ -1,0 +1,7 @@
+body {
+  background-color: yellowgreen;
+}
+
+div:hover {
+  color: red;
+}
