@@ -1,0 +1,40 @@
+html,
+body {
+  background-color: tomato;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-div {
+  background-color: #f5deb3;
+  border: 3px solid rgba(0, 0, 0, 1);
+  width: 242px;
+  height: 242px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-div > div {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  background-color: #008080;
+  border: 3px solid white;
+  width: 50px;
+  height: 50px;
+}
+
+.long-span {
+  border: 3px dashed white;
+  width: 200px;
+  height: 50px;
+}
