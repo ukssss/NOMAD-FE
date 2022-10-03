@@ -1,0 +1,137 @@
+/* music-info */
+.music-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.music-info__image {
+  width: 135px;
+  height: 135px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-radius: 15%;
+  color: white;
+  background-color: #febe0e;
+}
+
+.music-info__text {
+  margin: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.music-info__text > span:first-child {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.music-info__text > span:last-child {
+  font-size: 17px;
+}
+
+/* music-button */
+.music-button {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.music-button__play {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgba(0, 0, 0, 1);
+  border-radius: 20px;
+}
+
+.music-button__play > span:first-child {
+  margin-right: 10px;
+}
+
+.music-button__play > span:last-child {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.music-button__etc {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-button__etc > span {
+  margin: 0px 10px;
+  width: 70px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgba(0, 0, 0, 1);
+  border-radius: 50%;
+}
+
+/* music-list */
+.music-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.music-list_part {
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.music-list__image {
+  width: 60px;
+  height: 60px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-radius: 15%;
+}
+
+.music-list__text {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.music-list__text > span:first-child {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.music-list__text > span:last-child {
+  font-size: 15px;
+  opacity: 0.7;
+}
+
+.first {
+  background-color: #f85a2a;
+}
+
+.second {
+  background-color: #ff89bb;
+}
+.third {
+  background-color: #1947e5;
+}
+.fourth {
+  background-color: #00c6ad;
+}
