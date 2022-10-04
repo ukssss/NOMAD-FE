@@ -1,5 +1,5 @@
 header {
-  margin: 30px 30px 50px 30px;
+  margin: 15px 30px 50px 30px;
   display: flex;
   align-items: center;
 }
@@ -15,4 +15,16 @@ header > span:nth-child(2) {
   justify-content: center;
   font-size: 30px;
   font-weight: 800;
+}
+
+header > span:last-child {
+  width: 33%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+header > span:hover {
+  color: white;
+  opacity: 0.3;
 }
