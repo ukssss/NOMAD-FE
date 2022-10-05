@@ -1,3 +1,6 @@
+/* import */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+
 /* Default */
 html {
   background-color: green;
@@ -13,6 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 /* header */
