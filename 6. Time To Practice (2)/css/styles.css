@@ -1,0 +1,251 @@
+/* Default */
+html {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 400px;
+  margin-top: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* header */
+header {
+  width: 100%;
+  padding: 30px 0px 40px 0px;
+  background-color: #ffc72d;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header > span {
+  font-size: 18px;
+}
+
+/* Search */
+.bookstore-search {
+  width: 100%;
+  position: absolute;
+  top: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookstore-search__icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.bookstore-search__icon > input {
+  padding: 0px 15px;
+  width: 350px;
+  height: 50px;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.bookstore-search__icon > span {
+  position: absolute;
+  right: 15px;
+  opacity: 0.3;
+}
+
+/* BookOfDay */
+.bookstore-bookofday {
+  padding: 50px 20px 20px 20px;
+}
+
+.bookstore-bookofday > span {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.bookstore-bookofday__info {
+  display: flex;
+}
+
+.bookstore-bookofday__info > img {
+  width: 107px;
+  height: 165px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.bookstore-bookofday__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.bookstore-bookofday__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.bookstore-bookofday__subtitle {
+  font-size: 13px;
+  opacity: 0.3;
+  margin: 5px 0px;
+}
+
+.bookstore-bookofday__stars > span {
+  color: #ffc72d;
+}
+
+.bookstore-bookofday__stars > span:last-child {
+  color: black;
+}
+
+.bookstore-bookofday__categories {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px 0px 10px 0px;
+}
+
+.bookstore-bookofday__categories > span {
+  width: 100px;
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookstore-bookofday__shop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 70px 0px 17px;
+}
+
+.bookstore-bookofday__shop > span:first-child {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #ffc72d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookstore-bookofday__shop > span:last-child {
+  width: 100px;
+  height: 35px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MDChoice */
+.bookstore-mdchoice {
+  padding: 0px 20px;
+  height: 186px;
+}
+
+.bookstore-mdchoice > span {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.bookstore-mdchoice__lists {
+  display: flex;
+  padding: 0;
+  margin: 10px 0px 0px 0px;
+  height: 140px;
+  overflow-x: auto;
+}
+
+.bookstore-mdchoice__list {
+  display: flex;
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookstore-mdchoice__list > img {
+  width: 73px;
+  height: 111px;
+}
+
+.bookstore-mdchoice__stars {
+  margin-top: 2px;
+  width: 60px;
+  height: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookstore-star__full {
+  font-size: 2px;
+  color: #ffc72d;
+}
+
+.bookstore-star__empty {
+  font-size: 2px;
+}
+
+/* Authors */
+.bookstore-authors {
+  padding: 0px 20px 20px 20px;
+}
+
+.bookstore-authors > span {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.bookstore-authors__info {
+  display: flex;
+}
+
+.bookstore-authors__info > img {
+  width: 107px;
+  height: 132px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.bookstore-authors__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.bookstore-authors__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.bookstore-authors__subtitle {
+  font-size: 13px;
+  opacity: 0.3;
+  margin: 5px 0px;
+  height: 100px;
+  overflow-y: auto;
+}
