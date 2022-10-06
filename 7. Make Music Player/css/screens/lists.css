@@ -1,0 +1,135 @@
+.music-lists-top,
+.music-lists-top__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.music-lists-top__profile {
+  border-radius: 50%;
+  margin-bottom: 35px;
+}
+
+.music-lists-top__name {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.music-lists-top__tag {
+  font-size: 12px;
+  opacity: 0.5;
+  margin: 11px 0px 30px 0px;
+}
+
+.music-lists-top__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-lists-top__shuffle,
+.music-lists-top__heart {
+  margin: 0px 21px;
+  width: 90px;
+  height: 35px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.music-lists-top__shuffle {
+  border: none;
+  background-color: #222222;
+  color: white;
+}
+
+.music-lists-top__heart {
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-lists-top__heart > span {
+  margin: 0px 3px;
+}
+
+.music-lists-bottom {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-lists {
+  padding: 0;
+  width: 100%;
+  margin: 34px 30px;
+  height: 250px;
+  list-style: none;
+  overflow-y: scroll;
+}
+
+.music-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.music-list > img {
+  border-radius: 10px;
+}
+
+.music-list__text {
+  width: 145px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.music-list__text > span:first-child,
+.music-player__text > span:first-child {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.music-list__text > span:last-child,
+.music-player__text > span:last-child {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.music-player__popup {
+  position: absolute;
+  width: 263px;
+  height: 55px;
+  background-color: #222222;
+  color: white;
+  border-radius: 30px;
+  bottom: -12px;
+  display: flex;
+  align-items: center;
+}
+
+.music-player__text {
+  width: 60%;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.music-player__button {
+  width: 40%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

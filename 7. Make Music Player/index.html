@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7. Make Music Player</title>
+  </head>
+  <body>
+    <div class="screen-lists">
+      <header class="screen-header">
+        <span><i class="fas fa-arrow-left"></i></span>
+        <span><i class="fas fa-search"></i></span>
+      </header>
+
+      <div class="music-lists-top">
+        <div class="music-lists-top__info">
+          <img
+            class="music-lists-top__profile"
+            src="https://cdnimg.melon.co.kr/cm2/artistcrop/images/007/35/506/735506_500.jpg?b6bc51895e2a015477e9f39fc283bb32/melon/resize/416/quality/80/optimize"
+            width="80px"
+            height="80px"
+          />
+          <span class="music-lists-top__name">Car, the garden</span>
+          <span class="music-lists-top__tag">Men, Solo</span>
+        </div>
+        <div class="music-lists-top__button">
+          <button class="music-lists-top__shuffle"><i class="fas fa-random fa-lg"></i></button>
+          <div class="music-lists-top__heart">
+            <span><i class="fas fa-heart"></i></span>
+            <span>64,564</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="music-lists-bottom">
+        <ul class="music-lists">
+          <li class="music-list">
+            <img
+              src="https://cdnimg.melon.co.kr/cm/album/images/102/74/611/10274611_500.jpg?90d860a67228d7aeba30f062a0fdae5d/melon/resize/282/quality/80/optimize"
+              width="38px"
+              height="40px"
+            />
+            <div class="music-list__text">
+              <span>Car, the garden</span>
+              <span>나무</span>
+            </div>
+            <span><i class="fas fa-ellipsis-v"></i></span>
+          </li>
+          <li class="music-list">
+            <img
+              src="https://cdnimg.melon.co.kr/cm2/album/images/106/92/255/10692255_20210825184324_500.jpg?c6205139d26c37fde1a2a60ba3159067/melon/resize/282/quality/80/optimize"
+              width="38px"
+              height="40px"
+            />
+            <div class="music-list__text">
+              <span>Car, the garden</span>
+              <span>가까운 듯 먼 그대여</span>
+            </div>
+            <span><i class="fas fa-ellipsis-v"></i></span>
+          </li>
+          <li class="music-list">
+            <img
+              src="https://cdnimg.melon.co.kr/cm/album/images/102/33/385/10233385_500.jpg?f46ade19dcab67e97ac8429dfdabcb1d/melon/resize/282/quality/80/optimize"
+              width="38px"
+              height="40px"
+            />
+            <div class="music-list__text">
+              <span>Car, the garden</span>
+              <span>명동콜링</span>
+            </div>
+            <span><i class="fas fa-ellipsis-v"></i></span>
+          </li>
+          <li class="music-list">
+            <img
+              src="https://cdnimg.melon.co.kr/cm/album/images/101/18/993/10118993_500.jpg?ac5c485e9f77066030220035ef452b19/melon/resize/282/quality/80/optimize"
+              width="38px"
+              height="40px"
+            />
+            <div class="music-list__text">
+              <span>Car, the garden</span>
+              <span>Home Sweet Home</span>
+            </div>
+            <span><i class="fas fa-ellipsis-v"></i></span>
+          </li>
+          <li class="music-list">
+            <img
+              src="https://cdnimg.melon.co.kr/cm/album/images/102/97/580/10297580_500.jpg?08421e1462f0c8491ef3b1877e862e09/melon/resize/282/quality/80/optimize"
+              width="38px"
+              height="40px"
+            />
+            <div class="music-list__text">
+              <span>Car, the garden</span>
+              <span>우리의 밤을 외워요</span>
+            </div>
+            <span><i class="fas fa-ellipsis-v"></i></span>
+          </li>
+        </ul>
+        <div class="music-player__popup">
+          <div class="music-player__text">
+            <span>Car, the garden</span>
+            <span>Home Sweet Home</span>
+          </div>
+          <div class="music-player__button">
+            <span><i class="fas fa-step-backward"></i></span>
+            <span><i class="fas fa-pause"></i></span>
+            <span><i class="fas fa-step-forward"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen-player">
+      <header class="screen-header">
+        <span><i class="fas fa-arrow-left"></i></span>
+        <span><i class="fas fa-ellipsis-h"></i></span>
+      </header>
+
+      <div class="music-player-top">
+        <img
+          src="https://cdnimg.melon.co.kr/cm/album/images/101/18/993/10118993_500.jpg?ac5c485e9f77066030220035ef452b19/melon/resize/282/quality/80/optimize"
+          width="208px"
+          height="208px"
+        />
+        <div class="music-player-top__text">
+          <span>Home Sweet Home</span>
+          <span>Car, the garden</span>
+        </div>
+      </div>
+
+      <div class="music-player-mid">
+        <div class="music-player-mid__text">
+          <span>02:09</span>
+          <span>03:26</span>
+        </div>
+        <div class="music-player-mid__control">
+          <div class="music-player-mid__played"></div>
+          <div class="music-player-mid__now"><i class="fas fa-circle fa-xs"></i></div>
+          <div class="music-player-mid__playing"></div>
+        </div>
+      </div>
+
+      <div class="music-player-bottom">
+        <span><i class="fas fa-redo-alt"></i></span>
+        <span><i class="fas fa-step-backward"></i></span>
+        <span><i class="fas fa-play-circle fa-lg"></i></span>
+        <span><i class="fas fa-step-forward"></i></span>
+        <span><i class="fas fa-random"></i></span>
+      </div>
+    </div>
+  </body>
+  <script src="https://kit.fontawesome.com/6042774c59.js" crossorigin="anonymous"></script>
+</html>
