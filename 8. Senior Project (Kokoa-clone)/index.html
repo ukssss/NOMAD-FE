@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to KoKoaClone</title>
+  </head>
+  <body class="login">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <div class="welcome-header__title">
+        <i class="fab fa-youtube fa-2x"></i>
+        <h1 class="welcome-header__name">Youtube Music</h1>
+      </div>
+      <p class="welcome-header__text">If you have a Google Account, log in with your email or phone number</p>
+    </header>
+
+    <form action="friends.html" method="get" class="login-form">
+      <input required class="login-form__input" type="text" name="username" placeholder="Email or phone number" />
+      <input required class="login-form__input" type="password" name="password" placeholder="Password" />
+      <input class="login-form__btn" type="submit" value="Log In" />
+      <a class="login-form__a" href="#">Find Google Account or Password</a>
+    </form>
+
+    <div id="splash-screen">
+      <i class="fas fa-comment"></i>
+    </div>
+
+    <div id="no-landscape">
+      <span>가로 모드를 지원하지 않습니다</span>
+    </div>
+
+    <div id="no-mobile">
+      <span>모바일 기기에서만 지원합니다</span>
+    </div>
+
+    <script src="https://kit.fontawesome.com/6042774c59.js" crossorigin="anonymous"></script>
+  </body>
+</html>
