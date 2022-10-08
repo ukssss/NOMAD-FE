@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player - Youtube Music</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__div">
+        <div class="alt-header__column">
+          <a href="javascript:history.back();">
+            <i class="fas fa-chevron-down fa-lg"></i>
+          </a>
+        </div>
+        <div class="alt-header__column">
+          <span class="alt-header__music">노래</span>
+          <span class="alt-header__video">동영상</span>
+        </div>
+        <div class="alt-header__column">
+          <span><i class="fab fa-chromecast fa-lg"></i></span>
+          <span><i class="fas fa-ellipsis-v"></i></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <div class="player-top">
+        <img
+          class="player-top__img"
+          src="https://cdnimg.melon.co.kr/cm/album/images/102/74/611/10274611_500.jpg?90d860a67228d7aeba30f062a0fdae5d/melon/resize/282/quality/80/optimize"
+          width="344px"
+          height="346px"
+        />
+        <div class="player-top__info">
+          <span><i class="far fa-thumbs-down fa-lg"></i></span>
+          <div class="player-top__text">
+            <span>나무</span>
+            <span>카더가든</span>
+          </div>
+          <span><i class="far fa-thumbs-up fa-lg"></i></span>
+        </div>
+      </div>
+      <div class="player-mid">
+        <div class="player-mid__control">
+          <div class="player-mid__played"></div>
+          <div class="player-mid__now"></div>
+          <div class="player-mid__playing"></div>
+        </div>
+        <div class="player-mid__text">
+          <span>01:57</span>
+          <span>03:52</span>
+        </div>
+      </div>
+      <div class="player-bot">
+        <div class="player-bot__btn">
+          <span><i class="fas fa-random fa-lg"></i></span>
+          <span><i class="fas fa-step-backward fa-lg"></i></span>
+          <span><i class="fas fa-play fa-2x"></i></span>
+          <span><i class="fas fa-step-forward fa-lg"></i></span>
+          <span><i class="fas fa-redo-alt fa-lg"></i></span>
+        </div>
+      </div>
+    </main>
+
+    <nav class="alt-nav">
+      <div class="alt-nav__deco">
+        <div class="alt-nav__line"></div>
+      </div>
+      <ul class="nav__ul nav__animation">
+        <li class="nav__li">
+          <span>다음 트랙</span>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="chats.html">
+            <span>가사</span>
+          </a>
+        </li>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="more.html">
+            <span>관련 항목</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="no-landscape">
+      <span>가로 모드를 지원하지 않습니다</span>
+    </div>
+
+    <div id="no-mobile">
+      <span>모바일 기기에서만 지원합니다</span>
+    </div>
+
+    <script src="https://kit.fontawesome.com/6042774c59.js" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -2,8 +2,8 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #f9f9fa;
-  padding: 20px 50px;
+  background-color: #212121;
+  padding: 20px 80px;
   box-sizing: border-box;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -15,11 +15,12 @@
 
 .nav__a {
   position: relative;
+  color: white;
   transition: color 0.3s ease-in-out;
 }
 
 .nav__a:hover {
-  color: var(--yellow);
+  color: var(--googleRed);
 }
 
 @keyframes notificationAnimation {
