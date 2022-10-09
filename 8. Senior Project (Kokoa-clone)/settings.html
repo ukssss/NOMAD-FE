@@ -25,130 +25,84 @@
 
     <header class="alt-header">
       <div class="alt-header__div">
-        <div class="alt-header__column">
+        <div class="alt-header__column screen-alt-header">
           <a href="javascript:history.back();">
-            <i class="fas fa-angle-left fa-3x"></i>
+            <i class="fas fa-times fa-2x"></i>
           </a>
+          <h1 class="alt-header__title">계정</h1>
         </div>
-        <div class="alt-header__column">
-          <h1 class="alt-header__title">Settings</h1>
-        </div>
-        <div class="alt-header__column">
-          <i class="fas fa-search fa-2x"></i>
-        </div>
+        <div class="alt-header__column"></div>
+        <div class="alt-header__column"></div>
       </div>
     </header>
 
     <main class="main-screen">
-      <div class="settings-screen">
-        <ul class="settings-list">
-          <li class="settings__setting">
-            <div class="settings__setting-column">
-              <i class="fas fa-bullhorn"></i>
-              <span>Notices</span>
-            </div>
-            <div class="settings__setting-column"></div>
+      <div class="account-screen-top">
+        <div class="account-screen__icon">
+          <span>S</span>
+        </div>
+        <div class="account-screen__text">
+          <span class="account-screen__name">Seonguk Hong</span>
+          <span class="account-screen__help">Google 계정 관리</span>
+        </div>
+      </div>
+      <div class="account-screen-mid">
+        <span class="account-screen__appname">YOUTUBE PREMIUM</span>
+        <ul class="account-screen__lists">
+          <li class="account-screen__list">
+            <span>
+              <i class="fas fa-house-user fa-lg"></i>
+            </span>
+            <span>내 채널</span>
           </li>
-          <li class="settings__setting">
-            <div class="settings__setting-column">
-              <i class="fas fa-flask"></i>
-              <span>Kokoa Lab</span>
-            </div>
-            <div class="settings__setting-column"></div>
+          <li class="account-screen__list">
+            <span>
+              <i class="fas fa-download fa-lg"></i>
+            </span>
+            <span>오프라인 저장 콘텐츠</span>
           </li>
-          <li class="settings__setting">
-            <div class="settings__setting-column">
-              <i class="fas fa-info-circle"></i>
-              <span>Version</span>
-            </div>
-            <div class="settings__setting-column">
-              <span>Lastest Version</span>
-            </div>
+          <li class="account-screen__list">
+            <span>
+              <i class="fas fa-history fa-lg"></i>
+            </span>
+            <span>기록</span>
           </li>
-        </ul>
-        <div class="divider"></div>
-        <ul class="settings-list">
-          <li class="settings__setting">
-            <div class="settings__setting-column">
-              <i class="fas fa-bullhorn"></i>
-              <span>Privacy</span>
-            </div>
-            <div class="settings__setting-column"></div>
+          <li class="account-screen__list">
+            <span>
+              <i class="fas fa-backward fa-lg"></i>
+            </span>
+            <span>내 Recap</span>
           </li>
-          <li class="settings__setting">
-            <div class="settings__setting-column">
-              <i class="fas fa-flask"></i>
-              <span>Notification</span>
-            </div>
-            <div class="settings__setting-column"></div>
+          <li class="account-screen__list">
+            <span>
+              <i class="far fa-money-bill-alt fa-lg"></i>
+            </span>
+            <span>유료 멤버십</span>
           </li>
-          <li class="settings__setting">
-            <div class="settings__setting-column">
-              <i class="fas fa-info-circle"></i>
-              <span>Friends</span>
-            </div>
-            <div class="settings__setting-column"></div>
+          <li class="account-screen__list">
+            <span>
+              <i class="fas fa-cog fa-lg"></i>
+            </span>
+            <span>설정</span>
           </li>
-          <li class="settings__setting">
-            <div class="settings__setting-column">
-              <i class="fas fa-flask"></i>
-              <span>Chats</span>
-            </div>
-            <div class="settings__setting-column"></div>
+          <li class="account-screen__list">
+            <span>
+              <i class="fas fa-question-circle fa-lg"></i>
+            </span>
+            <span>도움말 및 의견</span>
           </li>
-          <li class="settings__setting">
-            <div class="settings__setting-column">
-              <i class="fas fa-flask"></i>
-              <span>Display</span>
-            </div>
-            <div class="settings__setting-column"></div>
-          </li>
-          <li class="settings__setting">
-            <div class="settings__setting-column">
-              <i class="fas fa-flask"></i>
-              <span>Themes</span>
-            </div>
-            <div class="settings__setting-column">
-              <span>Default theme</span>
-            </div>
-          </li>
-          <li class="settings__setting">
-            <div class="settings__setting-column">
-              <i class="fas fa-flask"></i>
-              <span>Call</span>
-            </div>
-            <div class="settings__setting-column"></div>
+          <li class="account-screen__list">
+            <a href="./chat.html">
+              <i class="fas fa-comments fa-lg"></i>
+            </a>
+            <a href="./chat.html">상담원과의 연결</a>
           </li>
         </ul>
       </div>
+      <div class="account-screen-bot">
+        <span>개인정보처리방침 ∙ 서비스 약관</span>
+      </div>
     </main>
-
-    <nav class="nav">
-      <ul class="nav__ul">
-        <li class="nav__li">
-          <a class="nav__a" href="friends.html">
-            <i class="far fa-user fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__li">
-          <a class="nav__a" href="chats.html">
-            <span class="nav__notification badge">1</span>
-            <i class="far fa-comment fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__li">
-          <a class="nav__a" href="find.html">
-            <i class="fas fa-search fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__li">
-          <a class="nav__a" href="more.html">
-            <span class="nav__update point"></span>
-            <i class="fas fa-ellipsis-h fa-2x"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
 
     <div id="no-landscape">
       <span>가로 모드를 지원하지 않습니다</span>

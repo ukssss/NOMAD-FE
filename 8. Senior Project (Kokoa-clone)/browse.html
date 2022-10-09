@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Find - KoKoaClone</title>
+    <title>Browse - Youtube Music</title>
   </head>
   <body>
     <div class="status-bar">
@@ -24,87 +24,377 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Find</h1>
+      <div class="screen-header__title">
+        <i class="far fa-play-circle fa-lg"></i>
+        <h1 class="screen-header__name">Music</h1>
+      </div>
       <div class="screen-header__icons">
-        <span><i class="fas fa-search fa-2x"></i></span>
-        <span>
-          <a href="settings.html">
-            <i class="fas fa-cog fa-2x"></i>
-          </a>
-        </span>
-        <span class="screen-header__point point"></span>
+        <span><i class="fab fa-chromecast fa-lg"></i></span>
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span class="screen-header__user">S</span>
       </div>
     </header>
 
-    <main class="main-screen">
-      <div class="icon-row">
-        <div class="icon-row__icon">
-          <i class="fas fa-qrcode"></i>
-          <span>QR Code</span>
+    <main class="main-screen browse-screen">
+      <div class="browse-screen-top">
+        <ul class="browse-choice__lists">
+          <li class="browse-choice__list">
+            <span><i class="fas fa-music"></i></span>
+            <span>새 앨범</span>
+          </li>
+          <li class="browse-choice__list">
+            <span><i class="fas fa-chart-line"></i></span>
+            <span>차트</span>
+          </li>
+          <li class="browse-choice__list">
+            <span><i class="far fa-smile-wink"></i></span>
+            <span>분위기 및 장르</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="browse-screen-mid">
+        <div class="browse-screen__title">
+          <span>새 앨범 및 싱글</span>
+          <span>더보기</span>
         </div>
-        <div class="icon-row__icon">
-          <i class="far fa-address-book"></i>
-          <span>Add by Contacts</span>
+        <ul class="music-row__lists">
+          <li class="music-row__list">
+            <img
+            class="row-list__img" 
+            src="https://cdnimg.melon.co.kr/cm2/album/images/110/57/545/11057545_20220916121816_500.jpg?6440dac4cc3ac3a498f99a8c2797eec4/melon/resize/282/quality/80/optimize" 
+            width="175px"
+            height="176px"/>
+            <span class="row-list__title">Monologue</span>
+            <span class="row-list__subtitle">노래 ∙ 테이</span>
+          </li>
+          <li class="music-row__list">
+            <img
+            class="row-list__img"  
+            src="https://cdnimg.melon.co.kr/cm/album/images/003/44/501/344501_500.jpg/melon/resize/282/quality/80/optimize" 
+            width="175px"
+            height="176px"/>
+            <span class="row-list__title">같은 베개...</span>
+            <span class="row-list__subtitle">노래 ∙ 테이</span>
+          </li>
+          <li class="music-row__list">
+            <img
+            class="row-list__img"  
+            src="https://cdnimg.melon.co.kr/cm/album/images/004/70/451/470451_500.jpg/melon/resize/282/quality/80/optimize" 
+            width="175px"
+            height="176px"/>
+            <span class="row-list__title">사랑은...향기를 남기고</span>
+            <span class="row-list__subtitle">노래 ∙ 테이</span>
+          </li>
+          <li class="music-row__list">
+            <img
+            class="row-list__img"  
+            src="https://cdnimg.melon.co.kr/cm2/album/images/107/62/039/10762039_20211103111749_500.jpg?3c9a43ea092c8a8799d49ec563af4b00/melon/resize/282/quality/80/optimize" 
+            width="175px"
+            height="176px"/>
+            <span class="row-list__title">순리</span>
+            <span class="row-list__subtitle">노래 ∙ 테이</span>
+          </li>
+          <li class="music-row__list">
+            <img
+            class="row-list__img"  
+            src="https://cdnimg.melon.co.kr/cm/album/images/000/49/657/49657_500.jpg/melon/resize/282/quality/80/optimize" 
+            width="175px"
+            height="176px"/>
+            <span class="row-list__title">그리움을 사랑한 가시나무</span>
+            <span class="row-list__subtitle">노래 ∙ 테이</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="browse-screen-bot">
+        <div class="browse-screen__title">
+          <span>인기곡</span>
+          <span>더보기</span>
         </div>
-        <div class="icon-row__icon">
-          <i class="far fa-id-card"></i>
-          <span>Add by ID</span>
-        </div>
-        <div class="icon-row__icon">
-          <i class="far fa-envelope"></i>
-          <span>Invite</span>
+        <div class="music-column__section">
+          <ul class="music-column__lists">
+            <li class="music-column__list">
+              <img
+                class="column-list__img"
+                src="https://cdnimg.melon.co.kr/cm2/album/images/110/45/985/11045985_20220905151107_500.jpg/melon/resize/120/quality/80/optimize"
+                width="46px"
+                height="48px"
+              />
+              <div class="column-list__rank">
+                <span class="rank-equal">•</span>
+                <span>1</span>
+              </div>
+              <div class="column-list__text">
+                <span>새삥 (Prod. ZICO) (Feat. 호미들)</span>
+                <span>지코 (ZICO)</span>
+              </div>
+              <span class="column-list__etc"><i class="fas fa-ellipsis-v"></i></span>
+            </li>
+            <li class="music-column__list">
+              <img
+                class="column-list__img"
+                src="https://cdnimg.melon.co.kr/cm2/album/images/110/34/298/11034298_20220822101843_500.jpg/melon/resize/120/quality/80/optimize"
+                width="46px"
+                height="48px"
+              />
+              <div class="column-list__rank">
+                <span class="rank-up">▲</span>
+                <span>2</span>
+              </div>
+              <div class="column-list__text">
+                <span>After LIKE</span>
+                <span>IVE (아이브)</span>
+              </div>
+              <span class="column-list__etc"><i class="fas fa-ellipsis-v"></i></span>
+            </li>
+            <li class="music-column__list">
+              <img
+                class="column-list__img"
+                src="https://cdnimg.melon.co.kr/cm2/album/images/110/11/565/11011565_20220801102637_500.jpg/melon/resize/120/quality/80/optimize"
+                width="46px"
+                height="48px"
+              />
+              <div class="column-list__rank">
+                <span class="rank-down">▼</span>
+                <span>3</span>
+              </div>
+              <div class="column-list__text">
+                <span>Hype boy</span>
+                <span>NewJeans</span>
+              </div>
+              <span class="column-list__etc"><i class="fas fa-ellipsis-v"></i></span>
+            </li>
+            <li class="music-column__list">
+              <img
+                class="column-list__img"
+                src="https://cdnimg.melon.co.kr/cm2/album/images/110/33/394/11033394_20220916124707_500.jpg/melon/resize/120/quality/80/optimize"
+                width="46px"
+                height="48px"
+              />
+              <div class="column-list__rank">
+                <span class="rank-up">▲</span>
+                <span>4</span>
+              </div>
+              <div class="column-list__text">
+                <span>Shut Down</span>
+                <span>BLACKPINK</span>
+              </div>
+              <span class="column-list__etc"><i class="fas fa-ellipsis-v"></i></span>
+            </li>
+          </ul>
+          <ul class="music-column__lists">
+            <li class="music-column__list">
+              <img
+                class="column-list__img"
+                src="https://cdnimg.melon.co.kr/cm2/album/images/110/11/565/11011565_20220801102637_500.jpg/melon/resize/120/quality/80/optimize"
+                width="46px"
+                height="48px"
+              />
+              <div class="column-list__rank">
+                <span class="rank-down">▼</span>
+                <span>5</span>
+              </div>
+              <div class="column-list__text">
+                <span>Attention</span>
+                <span>NewJeans</span>
+              </div>
+              <span class="column-list__etc"><i class="fas fa-ellipsis-v"></i></span>
+            </li>
+            <li class="music-column__list">
+              <img
+                class="column-list__img"
+                src="https://cdnimg.melon.co.kr/cm2/album/images/110/33/394/11033394_20220916124707_500.jpg/melon/resize/120/quality/80/optimize"
+                width="46px"
+                height="48px"
+              />
+              <div class="column-list__rank">
+                <span class="rank-equal">•</span>
+                <span>6</span>
+              </div>
+              <div class="column-list__text">
+                <span>Pink Venom</span>
+                <span>BLACKPINK</span>
+              </div>
+              <span class="column-list__etc"><i class="fas fa-ellipsis-v"></i></span>
+            </li>
+            <li class="music-column__list">
+              <img
+                class="column-list__img"
+                src="https://cdnimg.melon.co.kr/cm2/album/images/110/62/364/11062364_20220922182518_500.jpg/melon/resize/120/quality/80/optimize"
+                width="46px"
+                height="48px"
+              />
+              <div class="column-list__rank">
+                <span class="rank-equal">•</span>
+                <span>7</span>
+              </div>
+              <div class="column-list__text">
+                <span>Rush Hour (Feat. j-hope of BTS)</span>
+                <span>Crush</span>
+              </div>
+              <span class="column-list__etc"><i class="fas fa-ellipsis-v"></i></span>
+            </li>
+            <li class="music-column__list">
+              <img
+                class="column-list__img"
+                src="https://cdnimg.melon.co.kr/cm2/album/images/109/09/179/10909179_20220405103521_500.jpg/melon/resize/120/quality/80/optimize"
+                width="46px"
+                height="48px"
+              />
+              <div class="column-list__rank">
+                <span class="rank-equal">•</span>
+                <span>8</span>
+              </div>
+              <div class="column-list__text">
+                <span>LOVE DIVE</span>
+                <span>IVE (아이브)</span>
+              </div>
+              <span class="column-list__etc"><i class="fas fa-ellipsis-v"></i></span>
+            </li>
+          </ul>
+          <ul class="music-column__lists">
+            <li class="music-column__list">
+              <img
+                class="column-list__img"
+                src="https://cdnimg.melon.co.kr/cm2/album/images/110/63/205/11063205_20220923155512_500.jpg/melon/resize/120/quality/80/optimize"
+                width="46px"
+                height="48px"
+              />
+              <div class="column-list__rank">
+                <span class="rank-equal">•</span>
+                <span>9</span>
+              </div>
+              <div class="column-list__text">
+                <span>딱 10CM만</span>
+                <span>10CM, BIG Naughty (서동현)</span>
+              </div>
+              <span class="column-list__etc"><i class="fas fa-ellipsis-v"></i></span>
+            </li>
+            <li class="music-column__list">
+              <img
+                class="column-list__img"
+                src="https://cdnimg.melon.co.kr/cm2/album/images/107/35/654/10735654_20211008114339_500.jpg/melon/resize/120/quality/80/optimize"
+                width="46px"
+                height="48px"
+              />
+              <div class="column-list__rank">
+                <span class="rank-up">▲</span>
+                <span>10</span>
+              </div>
+              <div class="column-list__text">
+                <span>사랑은 늘 도망가</span>
+                <span>임영웅</span>
+              </div>
+              <span class="column-list__etc"><i class="fas fa-ellipsis-v"></i></span>
+            </li>
+            <li class="music-column__list">
+              <img
+                class="column-list__img"
+                src="https://cdnimg.melon.co.kr/cm2/album/images/110/57/545/11057545_20220916121816_500.jpg/melon/resize/120/quality/80/optimize"
+                width="46px"
+                height="48px"
+              />
+              <div class="column-list__rank">
+                <span class="rank-up">▲</span>
+                <span>11</span>
+              </div>
+              <div class="column-list__text">
+                <span>Monologue</span>
+                <span>테이</span>
+              </div>
+              <span class="column-list__etc"><i class="fas fa-ellipsis-v"></i></span>
+            </li>
+            <li class="music-column__list">
+              <img
+                class="column-list__img"
+                src="https://cdnimg.melon.co.kr/cm2/album/images/110/00/171/11000171_20220708163659_500.jpg/melon/resize/120/quality/80/optimize"
+                width="46px"
+                height="48px"
+              />
+              <div class="column-list__rank">
+                <span class="rank-down">▼</span>
+                <span>12</span>
+              </div>
+              <div class="column-list__text">
+                <span>그때 그 순간 그대로 (그그그)</span>
+                <span>WSG워너비 (가야G)</span>
+              </div>
+              <span class="column-list__etc"><i class="fas fa-ellipsis-v"></i></span>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="recommended-friends">
-        <h6 class="recommended-friends__title">Recommended Friends</h6>
-        <span>You have no recommended friends.</span>
-      </div>
-      <div class="open-chat">
-        <div class="open-chat__header">
-          <h4 class="open-chat__title">Open Chat</h4>
-          <span>
-            Go to Openchat Home
-            <i class="fas fa-chevron-right fa-xs"></i>
-          </span>
+
+      <div class="browse-screen-genre">
+        <div class="browse-screen__title">
+          <span>분위기 및 장르</span>
+          <span>더보기</span>
         </div>
-        <div class="open-post">
-          <div class="open-post__column">
-            <h5 class="open-post__title">HTML</h5>
-            <h6 class="open-post__hashtags">#markup#web</h6>
-            <div class="open-post__members">
-              <img src="img/channel.png" />
-              <span class="open-post__member-count">802 members</span>
-              <div class="divider"></div>
-              <span class="open-post__member-status">Active</span>
-            </div>
-          </div>
-          <div class="open-post__column">
-            <div class="open-post__photo">
-              <img src="img/html.png" />
-              <div class="open-post__heart-count"><i class="fas fa-heart fa-xs"></i><span>326</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="open-post">
-          <div class="open-post__column">
-            <h5 class="open-post__title">CSS</h5>
-            <h6 class="open-post__hashtags">#markup#web</h6>
-            <div class="open-post__members">
-              <img src="img/channel.png" />
-              <span class="open-post__member-count">707 members</span>
-              <div class="divider"></div>
-              <span class="open-post__member-status">Active</span>
-            </div>
-          </div>
-          <div class="open-post__column">
-            <div class="open-post__photo">
-              <img src="img/css.png" />
-              <div class="open-post__heart-count"><i class="fas fa-heart fa-xs"></i><span>177</span></div>
-            </div>
-          </div>
+        <div class="genre-row__section">
+          <ul class="genre-row__lists">
+            <li class="genre-row__list">
+              <span class="genre-left__color1"></span>
+              <span>Dance & Electronic</span>
+            </li>
+            <li class="genre-row__list">
+              <span class="genre-left__color2"></span>
+              <span>Pop</span>
+            </li>
+            <li class="genre-row__list">
+              <span class="genre-left__color3"></span>
+              <span>분위기 있는 재즈</span>
+            </li>
+          </ul>
+          <ul class="genre-row__lists">
+            <li class="genre-row__list">
+              <span class="genre-left__color4"></span>
+              <span>집중할 때</span>
+            </li>
+            <li class="genre-row__list">
+              <span class="genre-left__color5"></span>
+              <span>Romance</span>
+            </li>
+            <li class="genre-row__list">
+              <span class="genre-left__color6"></span>
+              <span>R&B & Soul</span>
+            </li>
+          </ul>
+          <ul class="genre-row__lists">
+            <li class="genre-row__list">
+              <span class="genre-left__color7"></span>
+              <span>Chill</span>
+            </li>
+            <li class="genre-row__list">
+              <span class="genre-left__color8"></span>
+              <span>잠잘 때</span>
+            </li>
+            <li class="genre-row__list">
+              <span class="genre-left__color9"></span>
+              <span>Feel Good</span>
+            </li>
+          </ul>
         </div>
       </div>
     </main>
+
+    <div class="pop-up">
+      <a class="pop-up__info" href="player.html">
+        <img 
+        class="pop-up__img"
+        src="https://cdnimg.melon.co.kr/cm/album/images/102/74/611/10274611_500.jpg?90d860a67228d7aeba30f062a0fdae5d/melon/resize/282/quality/80/optimize" 
+        width="48px"
+        height="48px"/>
+        <div class="pop-up__text">
+          <span>나무</span>
+          <span>카더가든</span>
+        </div>
+      </a>
+      <div class="pop-up__btn">
+        <span><i class="fas fa-play fa-lg"></i></span>
+        <span><i class="fas fa-step-forward fa-lg"></i></span>
+      </div>
+    </div>
 
     <nav class="nav">
       <ul class="nav__ul">

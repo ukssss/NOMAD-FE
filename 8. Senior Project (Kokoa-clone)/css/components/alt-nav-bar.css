@@ -28,3 +28,18 @@
   display: flex;
   justify-content: center;
 }
+
+.alt-nav__text {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.alt-nav__active {
+  position: absolute;
+  top: 95px;
+  width: 100%;
+  padding: 0px 80px 20px 80px;
+  background-color: #212121;
+  box-sizing: border-box;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}

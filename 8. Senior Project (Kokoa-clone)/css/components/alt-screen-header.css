@@ -1,5 +1,5 @@
 .alt-header {
-  top: 40px;
+  top: 30px;
   position: fixed;
   width: 100%;
   box-sizing: border-box;
@@ -10,6 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--dark);
 }
 
 .alt-header__column {
@@ -20,10 +21,25 @@
   margin-right: auto;
 }
 
+.screen-alt-header {
+  display: flex;
+  align-items: center;
+}
+
+.screen-alt-header > a {
+  color: white;
+}
+
+.screen-alt-header > .alt-header__title {
+  margin-left: 36px;
+  font-size: 23px;
+}
+
 .alt-header__column:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 23px;
 }
 
 .alt-header__column:nth-child(2) > span {

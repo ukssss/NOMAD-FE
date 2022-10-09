@@ -9,8 +9,9 @@
 @import "components/screen-header.css";
 @import "components/alt-screen-header.css";
 @import "components/user-component.css";
+@import "components/pop-up.css";
 @import "components/notification.css";
-@import "components/icon-row.css";
+@import "components/music-list.css";
 @import "components/no-mobile.css";
 
 /* Screens */
@@ -19,7 +20,9 @@
 @import "screens/browse.css";
 @import "screens/locker.css";
 @import "screens/player.css";
+@import "screens/playlist.css";
 @import "screens/settings.css";
+@import "screens/chat.css";
 
 body {
   color: white;
