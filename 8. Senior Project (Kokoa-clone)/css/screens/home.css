@@ -97,3 +97,7 @@
   font-size: 30px;
   font-weight: 600;
 }
+
+.replay-screen__list > li:hover {
+  cursor: pointer;
+}

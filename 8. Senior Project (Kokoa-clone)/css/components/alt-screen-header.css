@@ -21,13 +21,13 @@
   margin-right: auto;
 }
 
+.alt-header__column:first-child > a {
+  color: white;
+}
+
 .screen-alt-header {
   display: flex;
   align-items: center;
-}
-
-.screen-alt-header > a {
-  color: white;
 }
 
 .screen-alt-header > .alt-header__title {

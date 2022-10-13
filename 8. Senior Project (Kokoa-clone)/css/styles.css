@@ -8,7 +8,6 @@
 @import "components/alt-nav-bar.css";
 @import "components/screen-header.css";
 @import "components/alt-screen-header.css";
-@import "components/user-component.css";
 @import "components/pop-up.css";
 @import "components/notification.css";
 @import "components/music-list.css";
@@ -21,7 +20,7 @@
 @import "screens/locker.css";
 @import "screens/player.css";
 @import "screens/playlist.css";
-@import "screens/settings.css";
+@import "screens/account.css";
 @import "screens/chat.css";
 
 body {

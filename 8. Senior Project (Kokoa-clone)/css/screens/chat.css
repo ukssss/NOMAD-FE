@@ -45,12 +45,18 @@
   margin-bottom: 5px;
 }
 
-.chat-screen__message img {
-  border: 1px solid white;
+.chat-message__receiver {
   width: 50px;
   height: 50px;
   border-radius: 20px;
   margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  background-color: white;
+  color: var(--googleBlue);
+  font-weight: 600;
 }
 
 .chat-message__info {
@@ -116,7 +122,8 @@
 }
 
 .chat-message--send .chat-message__bubble {
-  background-color: white;
+  background-color: var(--googleBlue);
+  color: white;
   border-top-right-radius: 0px;
   border-top-left-radius: 14px;
 }
