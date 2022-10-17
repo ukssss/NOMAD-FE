@@ -1,3 +1,18 @@
 .hidden {
   display: none;
 }
+
+.range {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.range > h3 {
+  margin-right: 10px;
+}
+
+.result-form {
+  display: flex;
+  flex-direction: column;
+}

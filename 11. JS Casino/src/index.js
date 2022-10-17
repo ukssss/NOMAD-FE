@@ -3,8 +3,6 @@ const range = gameForm.querySelector(".range > input");
 const guess = gameForm.querySelector(".guess > input");
 
 const resultForm = document.querySelector(".result-form");
-const content = resultForm.querySelector(".result > span:first-child");
-const result = resultForm.querySelector(".result > span:last-child");
 
 const HIDDEN_CLASS = "hidden";
 
@@ -13,17 +11,22 @@ function onCasinoSubmit(event) {
   const rngNum = parseInt(range.value);
   const randomNum = parseInt(Math.random() * rngNum);
   const gesNum = parseInt(guess.value);
-  console.log(rngNum + ",   " + randomNum + ",    " + gesNum);
 
-  if (randomNum === gesNum) {
-    resultForm.classList.remove(HIDDEN_CLASS);
-    content.innerText = `${gesNum} === ${randomNum}`;
-    result.innerText = "You Win!";
+  if (rngNum < 0) {
+    alert("Negative numbers cannot be entered.");
   } else {
-    resultForm.classList.remove(HIDDEN_CLASS);
-    content.innerText = `${gesNum} !== ${randomNum} `;
-    result.innerText = "You Lose!";
+    if (randomNum === gesNum) {
+      resultForm.classList.remove(HIDDEN_CLASS);
+      resultForm.innerHTML = `<span>You: ${gesNum}, AI: ${randomNum}</span>
+      <span style='color:green'>You win!</span>`;
+    } else {
+      resultForm.classList.remove(HIDDEN_CLASS);
+      resultForm.innerHTML = `<span>You: ${gesNum}, AI: ${randomNum}</span>
+      <span style='color:red'>You Lose!</span>`;
+    }
   }
+
+  console.log(rngNum + ",   " + randomNum + ",    " + gesNum);
 }
 
 gameForm.addEventListener("submit", onCasinoSubmit);
