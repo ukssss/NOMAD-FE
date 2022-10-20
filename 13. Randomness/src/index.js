@@ -20,3 +20,13 @@ const colors = [
 ];
 
 const button = document.querySelector("button");
+
+function backgroundColorChange() {
+  const first = colors[Math.floor(Math.random() * colors.length)];
+  const second = colors[Math.floor(Math.random() * colors.length)];
+  const deg = Math.floor(Math.random() * 100);
+  const gradientColor = `linear-gradient(${deg}deg ,${first}, ${second})`;
+  document.body.style.backgroundImage = gradientColor;
+}
+
+button.addEventListener("click", backgroundColorChange);
