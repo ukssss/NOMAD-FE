@@ -27,6 +27,7 @@ function backgroundColorChange() {
   const deg = Math.floor(Math.random() * 100);
   const gradientColor = `linear-gradient(${deg}deg ,${first}, ${second})`;
   document.body.style.backgroundImage = gradientColor;
+  console.log(deg, first, second);
 }
 
 button.addEventListener("click", backgroundColorChange);
