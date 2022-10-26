@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  border: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+.color-option {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
