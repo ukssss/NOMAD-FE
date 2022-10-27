@@ -4,9 +4,14 @@ const lineWidth = document.getElementById("linewidth-range");
 const color = document.getElementById("color-change");
 const colorOptions = Array.from(document.querySelectorAll(".color-option"));
 const mode = document.getElementById("mode-btn");
+const refresh = document.getElementById("refresh-btn");
+const eraser = document.getElementById("eraser-btn");
 
-canvas.width = 800;
-canvas.height = 800;
+const CANVAS_WIDTH = 800;
+const CANVAS_HEIGHT = 800;
+
+canvas.width = CANVAS_WIDTH;
+canvas.height = CANVAS_HEIGHT;
 
 let setPaint = false;
 let setFill = false;
@@ -60,8 +65,19 @@ function onChangeMode() {
 
 function onCanvasFill() {
   if (setFill === true) {
-    ctx.fillRect(0, 0, 800, 800);
+    ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
   }
+}
+
+function onRefresh() {
+  ctx.fillStyle = "white";
+  ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+}
+
+function onEraser() {
+  ctx.strokeStyle = "white";
+  setFill = false;
+  mode.innerText = "Erase";
 }
 
 canvas.addEventListener("mousemove", onMouseMove); // 마우스가 움직일 경우
@@ -76,3 +92,5 @@ colorOptions.forEach((color) => color.addEventListener("click", onChangeColorOpt
 
 canvas.addEventListener("click", onCanvasFill);
 mode.addEventListener("click", onChangeMode);
+refresh.addEventListener("click", onRefresh);
+eraser.addEventListener("click", onEraser);
