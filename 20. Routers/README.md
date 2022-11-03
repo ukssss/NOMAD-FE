@@ -4,19 +4,22 @@
 
 라우터(Router)를 생성하는 실습 진행
 
-### Layout
+### Router Layout
 
 ```
-/
-/join
-/login
-/search
+/ -> Home
+/join -> Join
+/login -> Login
+/search -> Search
 
-/users/edit
-/users/delete
+/users/:id -> See User
+/users/:id/logout -> Log Out
+/users/:id/edit -> Edit My Profile
+/users/:id/delete -> Delete My Profile
 
-/videos/watch
-/videos/edit
-/videos/delete
-/videos/comments
+/videos/:id -> See Video
+/videos/:id/edit -> Edit Video
+/videos/:id/delete -> Delete Video
+/videos/:id/comments -> Comments Video
+/videos/upload -> Upload Video
 ```
