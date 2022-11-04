@@ -20,3 +20,7 @@
 /stories/:id/edit
 /stories/:id/delete
 ```
+
+### Result
+
+![result](result/result.gif)
