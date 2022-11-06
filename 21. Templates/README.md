@@ -67,4 +67,4 @@ block content
 
 ### Result
 
-![result](/result/templates.gif)
+![templates](/result/templates.gif)
