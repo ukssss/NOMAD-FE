@@ -67,4 +67,5 @@ block content
 
 ### Result
 
-![templates](/result/templates.git)
+![templates](https://user-images.githubusercontent.com/86929961/200159333-a445e0ca-39fa-40bb-977a-0875b426e2d2.gif)
+
