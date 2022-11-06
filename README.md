@@ -28,3 +28,5 @@
 
 18. Server
 19. Middlewares
+20. Routes
+21. Templates
