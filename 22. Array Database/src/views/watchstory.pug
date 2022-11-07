@@ -1,0 +1,5 @@
+extends layout.pug
+
+block content 
+  h3 #{story.views} #{story.views === 1 ? "view" : "views"}
+  a(href=`${story.id}/edit`) Edit Story &rarr;
