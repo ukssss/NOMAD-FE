@@ -119,8 +119,9 @@ block content
 ### Result
 
 1. Edit Story
-   ![edit](/result/6-3.gif)
-   ![edit2](</result/6-3(2).gif>)
+![6-3](https://user-images.githubusercontent.com/86929961/200291148-9ca05b95-c7a5-4cee-a90c-4f1866e0e5ef.gif)
+![6-3(2)](https://user-images.githubusercontent.com/86929961/200291165-ba686c13-1a28-4bfc-80dc-1b719c784233.gif)
 
 2. Upload Story
-   ![upload](/result/6-6.gif)
+![6-6](https://user-images.githubusercontent.com/86929961/200291210-3b4a2754-d748-4513-93f6-d70fe5c8b151.gif)
+
