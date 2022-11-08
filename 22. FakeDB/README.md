@@ -114,5 +114,3 @@ main
 3. Search by condition
 
 ![filter](https://user-images.githubusercontent.com/86929961/200577042-a04515c9-9aa7-46d6-ab76-e32313c864ff.gif)
-
-    input(type="submit", value="Search") // 조건 검색
