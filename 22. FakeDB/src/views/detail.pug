@@ -1,0 +1,10 @@
+extends layout
+include ./mixins/movie
+
+block content 
+  a(href=`/`)="Home"
+  div 
+    p=movie.summary
+    ul 
+      each info in movie.genres 
+        +info(info)
