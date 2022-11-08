@@ -105,12 +105,14 @@ main
 
 1. Home
 
-   ![home](/result/home.gif)
+![home](https://user-images.githubusercontent.com/86929961/200576993-205ec8c7-6a95-41d6-a254-197ea830887e.gif)
 
 2. Movie Details
 
-   ![detail](/result/movieDetail.gif)
+![movieDetail](https://user-images.githubusercontent.com/86929961/200577019-cbe86992-1420-4a96-ad45-5fa2acd64b37.gif)
 
 3. Search by condition
 
-   ![condition](/result/filter.gif)
+![filter](https://user-images.githubusercontent.com/86929961/200577042-a04515c9-9aa7-46d6-ab76-e32313c864ff.gif)
+
+    input(type="submit", value="Search") // 조건 검색
