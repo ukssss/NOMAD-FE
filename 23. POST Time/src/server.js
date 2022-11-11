@@ -3,6 +3,7 @@ import morgan from "morgan";
 import path from "path";
 import "./db";
 import movieRouter from "./routers/movieRouter";
+import { localsMiddleware } from "./middlewares";
 
 const PORT = 4000;
 const app = express();
@@ -11,6 +12,7 @@ const logger = morgan("dev");
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({ extended: true }));
+app.use(localsMiddleware);
 app.use(logger);
 
 app.use("/", movieRouter);
