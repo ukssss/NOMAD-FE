@@ -5,6 +5,7 @@ So import User from "./models"; will work!
 You can do User.find() or whatever you need like normal!
 */
 import User from "./models/User";
+import bcrypt from "bcrypt";
 
 // Add your magic here!
 
@@ -41,6 +42,27 @@ export const postJoin = async (req, res) => {
 };
 
 export const getLogin = (req, res) => res.render("login", { pageTitle: "Login" });
-export const postLogin = async (req, res) => res.render("login", { pageTitle: "Login" });
+export const postLogin = async (req, res) => {
+  const { username, password } = req.body;
+  const pageTitle = "Login";
+  const user = await User.findOne({ username });
+  if (!user) {
+    return res.status(400).render("login", {
+      pageTitle,
+      errorMessage: "오류: 존재하지 않는 사용자입니다",
+    });
+  }
+  const ok = await bcrypt.compare(password, user.password);
+  if (!ok) {
+    return res.status(400).render("login", {
+      pageTitle,
+      errorMessage: "오류: 잘못된 비밀번호입니다",
+    });
+  }
+  req.session.loggedIn = true;
+  req.session.user = user;
+
+  return res.redirect("/");
+};
 
 export const home = (req, res) => res.render("home", { pageTitle: "Home" });
