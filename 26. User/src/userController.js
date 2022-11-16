@@ -59,10 +59,16 @@ export const postLogin = async (req, res) => {
       errorMessage: "오류: 잘못된 비밀번호입니다",
     });
   }
-  req.session.loggedIn = true;
-  req.session.user = user;
-
-  return res.redirect("/");
+  try {
+    req.session.loggedIn = true;
+    req.session.user = user;
+    return res.redirect("/");
+  } catch (error) {
+    return res.status(400).render("login", {
+      pageTitle,
+      errorMessage: error._message,
+    });
+  }
 };
 
 export const home = (req, res) => {
