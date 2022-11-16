@@ -8,17 +8,21 @@ html(lang="ko")
           h1=pageTitle
           nav
               ul
-                  li
-                      a(href="/") Home
-                  if !req.session.loggedIn
+                  if loggedIn 
+                    li
+                        a(href="/") Home
+                    li
+                        a(href="/logout") Log Out
+                    li
+                        a(href="/search") Search
+                    li
+                        a(href="/videos/upload") Upload Video
+                  else 
                     li
                         a(href="/join") Join
                     li
                         a(href="/login") Login
-                  li
-                      a(href="/search") Search
-                  li
-                      a(href="/videos/upload") Upload Video
+
                 
                 
       main
