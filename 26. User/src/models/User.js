@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import bcrypt from "bcrypt";
 
 /*
 PLEASE ADD YOUR USERNAME IN THIS LINE.
@@ -13,9 +14,7 @@ const YOUR_USERNAME = "ukss";
 const UserSchema = mongoose.Schema({
   username: { type: String, required: true, unique: true },
   password: { type: String, required: true },
-  email: { type: String, required: true, unique: true },
   name: { type: String, required: true },
-  location: { type: String },
 });
 
 if (YOUR_USERNAME === null || typeof YOUR_USERNAME !== "string") {
@@ -31,6 +30,9 @@ if (YOUR_USERNAME.includes("@")) {
   throw Error("❌  Please remove the @ from your username  ❌");
 }
 
-const model = mongoose.model(`User_${YOUR_USERNAME}`, UserSchema);
+UserSchema.pre("save", async function () {
+  this.password = await bcrypt.hash(this.password, 5);
+});
 
+const model = mongoose.model(`User_${YOUR_USERNAME}`, UserSchema);
 export default model;

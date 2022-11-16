@@ -4,14 +4,13 @@ Because it's a default export we can nickname it whatever we want.
 So import User from "./models"; will work!
 You can do User.find() or whatever you need like normal!
 */
-import { render } from "pug";
 import User from "./models/User";
 
 // Add your magic here!
 
 export const getJoin = (req, res) => res.render("join", { pageTitle: "Join" });
 export const postJoin = async (req, res) => {
-  const { username, password, password2, email, name, location } = req.body;
+  const { username, password, password2, name } = req.body;
   const pageTitle = "Join";
   if (password !== password2) {
     return res.status(400).render("join", {
@@ -19,21 +18,20 @@ export const postJoin = async (req, res) => {
       errorMessage: "오류: 비밀번호가 다릅니다",
     });
   }
-  const exists = await User.exists({ $or: [{ username }, { email }] });
+  const exists = await User.exists({ username });
   if (exists) {
     return res.status(400).render("join", {
       pageTitle,
-      errorMessage: "오류: 이미 가입된 사용자명/이메일 입니다",
+      errorMessage: "오류: 이미 가입된 사용자명 입니다",
     });
   }
   try {
     await User.create({
       username,
       password,
-      email,
       name,
-      location,
     });
+    return res.redirect("/login");
   } catch (error) {
     return res.status(400).render("join", {
       pageTitle,
