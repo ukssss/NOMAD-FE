@@ -65,4 +65,9 @@ export const postLogin = async (req, res) => {
   return res.redirect("/");
 };
 
-export const home = (req, res) => res.render("home", { pageTitle: "Home" });
+export const home = (req, res) => {
+  if (!req.session.loggedIn) {
+    return res.redirect("/login");
+  }
+  return res.render("home", { pageTitle: "Home" });
+};

@@ -20,6 +20,13 @@ app.use(
     saveUninitialized: true,
   })
 );
+app.use((req, res, next) => {
+  req.sessionStore.all((error, sessions) => {
+    console.log(sessions);
+    next();
+  });
+});
+
 app.use(localsMiddleware);
 app.use("/", userRouter);
 
