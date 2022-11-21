@@ -1,9 +1,14 @@
 extends templates/layout
 
 block content
+
   form(method="POST")
     input(name="name", type="text", placeholder="Name", required, value=loggedInUser.name)
+    if emailErrorMessage
+      h3=emailErrorMessage
     input(name="email", type="email", placeholder="Email", required value=loggedInUser.email)
+    if usernameErrorMessage
+      h3=usernameErrorMessage
     input(name="username", type="text", placeholder="Username", required value=loggedInUser.username)
     input(name="location", type="text", placeholder="Location", required value=loggedInUser.location)
     input(type="submit", value="Update Profile")
