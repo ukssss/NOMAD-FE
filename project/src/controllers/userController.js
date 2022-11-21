@@ -1,4 +1,5 @@
 import User from "../models/User";
+import Video from "../models/Video";
 import fetch from "cross-fetch";
 import bcrypt from "bcrypt";
 
@@ -137,9 +138,10 @@ export const getEdit = (req, res) => {
 export const postEdit = async (req, res) => {
   const {
     session: {
-      user: { _id, username: sessionUsername, email: sessionEmail },
+      user: { _id, username: sessionUsername, email: sessionEmail, avatarUrl },
     },
     body: { name, email, username, location },
+    file,
   } = req;
 
   // username, email 이 DB 상에 존재하는지 확인
@@ -159,6 +161,7 @@ export const postEdit = async (req, res) => {
   const updateUser = await User.findByIdAndUpdate(
     _id,
     {
+      avatarUrl: file ? file.path : avatarUrl,
       name,
       email,
       username,
@@ -209,4 +212,17 @@ export const logout = (req, res) => {
   req.session.destroy();
   return res.redirect("/");
 };
-export const see = (req, res) => res.send("See User");
+
+export const see = async (req, res) => {
+  const { id } = req.params;
+  const user = await User.findById(id);
+  if (!user) {
+    return res.status(404).render("404", { pageTitle: "User not found." });
+  }
+  const videos = await Video.find({ owner: user._id });
+  return res.render("users/profile", {
+    pageTitle: user.name,
+    user,
+    videos,
+  });
+};

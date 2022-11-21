@@ -1,16 +1,5 @@
 import Video from "../models/Video";
 
-/*
-console.log("start")
-Video.find({}, (error, videos) => {
-  if(error){
-    return res.render("server-error")
-  }
-  return res.render("home", { pageTitle: "Home", videos });
-});
-console.log("finished")
-*/
-
 export const home = async (req, res) => {
   const videos = await Video.find({}).sort({ createdAt: "desc" });
   return res.render("home", { pageTitle: "Home", videos });
@@ -18,10 +7,11 @@ export const home = async (req, res) => {
 
 export const watch = async (req, res) => {
   const { id } = req.params;
-  const video = await Video.findById(id);
+  const video = await Video.findById(id).populate("owner");
   if (!video) {
     return res.status(404).render("404", { pageTitle: `Video not found.` });
   }
+  console.log(video);
   return res.render("watch", { pageTitle: video.title, video });
 };
 
@@ -54,15 +44,22 @@ export const getUpload = (req, res) => {
 };
 
 export const postUpload = async (req, res) => {
+  const {
+    user: { _id },
+  } = req.session;
+  const { path: fileUrl } = req.file;
   const { title, description, hashtags } = req.body;
   try {
     await Video.create({
       title,
       description,
+      fileUrl,
+      owner: _id,
       hashtags: Video.formatHashtags(hashtags),
     });
     return res.redirect("/");
   } catch (error) {
+    console.log(error);
     return res.status(400).render("upload", {
       pageTitle: "Upload Video",
       errorMessage: error._message,
