@@ -142,9 +142,11 @@ export const postEdit = async (req, res) => {
     body: { name, email, username, location },
   } = req;
 
+  // username, email 이 DB 상에 존재하는지 확인
   const usernameExists = username != sessionUsername ? await User.exists({ username }) : undefined;
   const emailExists = email != sessionEmail ? await User.exists({ email }) : undefined;
 
+  // 존재할 경우 오류메시지를 출력
   if (usernameExists || emailExists) {
     return res.status(400).render("edit-profile", {
       pageTitle: "Edit Profile",
@@ -153,6 +155,7 @@ export const postEdit = async (req, res) => {
     });
   }
 
+  // 세션에 유저 정보 업데이트
   const updateUser = await User.findByIdAndUpdate(
     _id,
     {
@@ -164,7 +167,42 @@ export const postEdit = async (req, res) => {
     { new: true }
   );
   req.session.user = updateUser;
+  req.session.destroy();
   return res.redirect("/users/edit");
+};
+
+export const getChangePassword = (req, res) => {
+  if (req.session.user.socialOnly === true) {
+    return res.redirect("/");
+  }
+  return res.render("users/change-password", { pageTitle: "Change Password" });
+};
+
+export const postChangePassword = async (req, res) => {
+  const {
+    session: {
+      user: { _id },
+    },
+    body: { oldPassword, newPassword, newPasswordConfirmation },
+  } = req;
+  const user = await User.findById(_id);
+  const ok = await bcrypt.compare(oldPassword, user.password);
+  if (!ok) {
+    return res.status(400).render("users/change-password", {
+      pageTitle: "Change Password",
+      notChangeErrorMessage: "The password you used before cannot be used.",
+    });
+  }
+  if (newPassword !== newPasswordConfirmation) {
+    return res.status(400).render("users/change-password", {
+      pageTitle: "Change Password",
+      notConfirmErrorMessage: "The password does not match the confirmation",
+    });
+  }
+  user.password = newPassword;
+  await user.save();
+  req.session.destroy();
+  return res.redirect("/users/logout");
 };
 
 export const logout = (req, res) => {
