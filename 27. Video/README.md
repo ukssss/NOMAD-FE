@@ -81,3 +81,4 @@ volumeRange.addEventListener("input", handleVolumeRange);
 ```
 
 ### 결과
+![Nov-23-2022 04-01-28](https://user-images.githubusercontent.com/86929961/203399402-10f6aa6d-4595-45a9-8923-9d598edc55a0.gif)
