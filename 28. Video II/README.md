@@ -110,4 +110,5 @@ video.addEventListener("mouseleave", handleMouseLeave);
 ```
 
 ### 결과
-![Nov-24-2022 02-28-52](https://user-images.githubusercontent.com/86929961/203611701-f66b84b5-7f60-437e-a9a9-4d857bad994f.gif)
+![Nov-24-2022 02-43-58](https://user-images.githubusercontent.com/86929961/203614145-b879dec7-bb46-4943-b371-1bdea907fb05.gif)
+
