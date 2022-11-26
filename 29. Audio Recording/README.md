@@ -58,3 +58,4 @@ const handleStart = async () => {
 ```
 
 ### 결과
+![Nov-26-2022 20-20-42](https://user-images.githubusercontent.com/86929961/204086240-0b89f2be-4a18-4175-ac0d-5adfe827b0de.gif)
