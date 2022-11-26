@@ -11,6 +11,7 @@ const handleDownload = () => {
   a.download = "MyRecording.webm";
   document.body.appendChild(a);
   a.click();
+  // 카메라 연결 해제, stream 연결을 끊음
   const tracks = stream.getTracks();
   tracks.forEach((track) => {
     track.stop();
